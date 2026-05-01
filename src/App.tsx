@@ -1,4 +1,4 @@
-import { onMount, onCleanup, createSignal, createEffect, type Component } from 'solid-js';
+import { onMount, onCleanup, createSignal, createEffect, Show, type Component } from 'solid-js';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
