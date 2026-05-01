@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" class="is-loading">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Jiménez — Mira esto 👋</title>
+    <meta name="description"
+        content="Portafolio de Pedro Jiménez — Estudiante de Diseño Digital y aspirante a diseñador UX/UI. Proyectos centrados en experiencias digitales refinadas.">
+
+    <!-- Fuentes locales: Absans (cuerpo) + Ronzino (títulos) — vía @font-face en style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth Scroll: Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <!-- Progreso de lectura (estilo portafolios editoriales) -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Pantalla de Carga -->
+    <div class="loader" aria-busy="true" aria-live="polite">
+        <div class="loader-inner">
+            <div class="loader-content">Pedro Jiménez <span id="year-loader">© 2026</span></div>
+        </div>
+    </div>
+
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navegación -->
+    <header class="navbar fade-down-intro">
+        <a href="#" class="logo">PJ.</a>
+        <nav class="nav-links">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="mailto:pedroly753@gmail.com" class="nav-cta">
+                Contacto
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" style="display: none;">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <!-- Ilustración desactivada por petición del usuario -->
+
+        <div class="hero-content">
+            <div class="overflow-hidden">
+                <div class="hero-label reveal-text" style="transition-delay: 0s;">
+                    Pedro Jimenez
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <h1 class="hero-title reveal-text" id="dynamic-greeting" style="transition-delay: 0.1s;"></h1>
+            </div>
+            <div class="overflow-hidden">
+                <p class="hero-subtitle reveal-text" style="transition-delay: 0.25s;">Estudiante de
+                    Diseño Digital en la Universidad Sergio Arboleda. <span class="hero-meta">Santa Marta, Colombia</span></p>
+            </div>
+        </div>
+
+        <!-- Scroll indicator oculto -->
+        <div class="scroll-indicator fade-up-intro" style="display: none;">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="projects fade-in-section">
+        <div class="projects-header">
+            <span class="section-label fade-up" style="--stagger: 0">Trabajos seleccionados</span>
+            <h2 class="section-title fade-up" style="--stagger: 1">Proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Proyecto: Quester (entradas escalonadas: índice → media → ficha) -->
+            <div class="project-card">
+                <span class="project-index fade-up" style="--stagger: 0">01 / UX · UI Design — Nov 27, '24</span>
+                <a href="https://imgur.com/a/eiB8Aiu" target="_blank" rel="noopener noreferrer"
+                    class="project-media-wrap fade-up" style="--stagger: 1">
+                    <div class="project-image" data-parallax data-hover="Quester ↗">
+                        <span class="project-status"><span class="project-status-dot"></span>Publicado</span>
+                        <video autoplay loop muted playsinline class="parallax-img"
+                            src="https://i.imgur.com/VuRwVQD.mp4" poster="https://i.imgur.com/VuRwVQDh.jpg"></video>
+                    </div>
+                </a>
+                <div class="project-info fade-up" style="--stagger: 2">
+                    <div class="project-info-left">
+                        <h3>Quester <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg></h3>
+                        <!-- sin cambios de contenido: solo estilo -->
+                    </div>
+                    <div class="project-info-right">
+                        <p class="project-type">App de Diseño</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about fade-in-section">
+        <div class="about-content">
+            <div class="about-text">
+                <span class="section-label fade-up" style="--stagger: 0">Sobre mí</span>
+                <h2 class="section-title fade-up" style="--stagger: 1">Creando con propósito</h2>
+                <p class="bio fade-up" style="--stagger: 2">Pedro Jiménez es lo que podrías llamar un diseñador. Enfocado en resolver problemas más que en decorar pantallas, creo que el buen diseño debe sentirse casi invisible, como si siempre hubiera estado ahí. Actualmente moldeando el futuro digital desde Santa Marta, Colombia.</p>
+
+                <div class="skills-grid fade-up" style="--stagger: 3">
+                    <div class="skill-category">
+                        <h4>Herramientas</h4>
+                        <p>Figma<br>Adobe Photoshop<br>Adobe Illustrator<br>Maze<br>FigJam</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Habilidades</h4>
+                        <p>Wireframing<br>Prototipado<br>User Research<br>Diseño Responsivo</p>
+                    </div>
+                </div>
+
+                <a href="assets/Pedro_Jimenez_CV.pdf" target="_blank" class="download-btn fade-up" style="--stagger: 4">
+                    Descargar CV
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+            <div class="about-image fade-up reveal-mask" style="--stagger: 5">
+                <img src="https://i.imgur.com/mNAJGDx.jpeg" alt="Fotografía de Pedro Jiménez">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact fade-in-section">
+        <span class="contact-eyebrow fade-up" style="--stagger: 0">¿Tienes un proyecto?</span>
+        <h2 class="contact-title fade-up" style="--stagger: 1">¿Trabajamos<br>juntos?</h2>
+        <a href="mailto:pedroly753@gmail.com" class="contact-email fade-up" style="--stagger: 2">
+            Escríbeme
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+        <div class="contact-links fade-up" style="--stagger: 3">
+            <a href="https://www.behance.net/zoypedroalv" target="_blank" rel="noopener noreferrer"><sup>01</sup> Behance</a>
+            <a href="https://www.linkedin.com/in/pedro-jos%C3%A9-jimenez-martinez-3b000a260/" target="_blank" rel="noopener noreferrer"><sup>02</sup> LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer fade-in-section">
+        <p class="fade-up" style="--stagger: 0">© 2026 Pedro Jiménez.</p>
+        <div class="footer-right fade-up" style="--stagger: 1">
+            <a href="https://www.behance.net/zoypedroalv" target="_blank" rel="noopener noreferrer"><sup>01</sup> Behance ↗</a>
+            <a href="https://www.linkedin.com/in/pedro-jos%C3%A9-jimenez-martinez-3b000a260/"
+                target="_blank" rel="noopener noreferrer"><sup>02</sup> LinkedIn ↗</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inter as a high-quality fallback font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <span class="logo-name">Pedro Jimenez</span>
+            <nav class="main-nav">
+                <a href="#inicio" data-i18n="nav-home">Inicio</a>
+                <a href="#sobre-mi" data-i18n="nav-about">Sobre mi</a>
+                <a href="#contacto" data-i18n="nav-contact">Contacto</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <button id="lang-toggle" class="header-control" aria-label="Cambiar idioma">EN</button>
+            <button id="theme-toggle" class="header-control" aria-label="Cambiar tema">
+                <!-- SVG injected by theme.js -->
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-container">
+                <h1 class="hero-text">
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-1">Haciendo</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-2">que</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-3">la</span></div>
+                    <span class="rainbow-text" data-text="tecnología" data-i18n="hero-tech">tecnología</span>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-4">sea</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-5">más</span></div>
+                    <span class="rainbow-text" data-text="humana" data-i18n="hero-human">humana</span>,
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-6">un</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-7">píxel</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-8">a</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-9">la</span></div>
+                    <div class="word-mask"><span class="word-reveal" data-i18n="hero-10">vez.</span></div>
+                </h1>
+            </div>
+        </section>
+
+        <section id="trabajo" class="work-section">
+            <div class="container work-container">
+                <div class="work-grid">
+                    <article class="work-card">
+                        <div class="work-media">
+                            <img src="https://i.imgur.com/VuRwVQD.gif" alt="Trabajo 1" loading="lazy">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Quester</h3>
+                            <p class="work-subtitle">Aventura en un dispositivo</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="custom-cursor">
+        <span class="cursor-text">Ver</span>
+    </div>
+    <script src="language.js"></script>
+    <script src="text-reveal.js"></script>
+    <script src="cursor.js"></script>
+    <script src="parallax.js"></script>
+    <script src="theme.js"></script>
+</body>
+
+</html>
