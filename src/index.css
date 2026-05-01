@@ -114,10 +114,10 @@ body::before {
   will-change: transform;
   /* base: small dot */
   width: 8px; height: 8px;
-  background: white;
+  background: white !important;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), background 0.2s;
+  transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out);
 }
 
 .cursor.expanded {
@@ -127,7 +127,7 @@ body::before {
 /* Labeled state (on project hover) */
 .cursor.labeled {
   width: 72px; height: 72px;
-  background: white;
+  background: white !important;
   mix-blend-mode: difference;
 }
 
